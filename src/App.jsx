@@ -1,39 +1,27 @@
-import { useState } from 'react'
-import { Flex, Layout } from 'antd';
+import { useState } from "react";
+import { Flex, Layout } from "antd";
+import Header from './components/Header.jsx';
+import Content from './components/Content.jsx';
+import Footer from "./components/Footer.jsx";
+import "./App.css";
 
-import './App.css'
 
-const headerStyle = {
-  textAlign: 'center',
-  color: '#fff',
-  height: 64,
-  paddingInline: 48,
-  lineHeight: '64px',
-  backgroundColor: '#4096ff',
-};
 const contentStyle = {
-  textAlign: 'center',
-  minHeight: 'calc(100vh - 130px)',
-  color: '#fff',
-  backgroundColor: '#0958d9',
+  textAlign: "center",
+  minHeight: "calc(100vh - 130px)"
 };
-const footerStyle = {
-  textAlign: 'center',
-  color: '#fff',
-  backgroundColor: '#4096ff',
-};
+
 
 function App() {
-  
-
   return (
     <>
-      <Layout.Header style={headerStyle}>Header</Layout.Header>
-      <Layout.Content style={contentStyle}>Content</Layout.Content>
-      <Layout.Footer style={footerStyle}>Footer</Layout.Footer>
-      
+      <Flex style={{minHeight: '100vh'}} vertical>
+        <Header />
+        <Content />
+        <Footer />
+      </Flex>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

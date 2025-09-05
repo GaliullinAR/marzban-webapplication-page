@@ -1,0 +1,36 @@
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    color: #fff;
+}
+
+.header__buttons {
+    font-size: 14px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.sign__up {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.login {
+    background-color: #462baaff;
+    border: 2px solid #462baaff;
+}
+
+.admin__panel {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #b61ea4ff;
+
+}
